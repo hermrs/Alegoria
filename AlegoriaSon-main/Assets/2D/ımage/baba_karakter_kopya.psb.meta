@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: 62177f4eb4629864fb5ff4d19c35f1eb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: kafa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 3443
+      width: 524
+      height: 517
+    spriteID: 11470c944e78dd249a572ab6b8bb8387
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 461, y: 3443}
+    spritePosition: {x: 1359, y: 2737}
+  - name: "sa\xE7"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 434
+      width: 566
+      height: 424
+    spriteID: bfe4caa7fd8edb24085abc8f7f433a8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1008, y: 434}
+    spritePosition: {x: 1299, y: 2936}
+  - name: sol kol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 2344
+      width: 535
+      height: 1091
+    spriteID: f2143ded26aae824d8cfca6d10e8d74a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 461, y: 2344}
+    spritePosition: {x: 1060, y: 1540}
+  - name: sol el
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1582
+      y: 434
+      width: 376
+      height: 370
+    spriteID: 3fc3dc50d38d7eb4eab4a0846410dc5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1582, y: 434}
+    spritePosition: {x: 1242, y: 1313}
+  - name: "\xFCst g\xF6vde"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 996
+      height: 1167
+    spriteID: 2c47729af3ab0ea4e9f4c88b0859df9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 1214, y: 1731}
+  - name: "g\xF6t"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 4
+      width: 669
+      height: 422
+    spriteID: 2f93e6d0e106ecc47873c18faaf3ff56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1008, y: 4}
+    spritePosition: {x: 1359, y: 1545}
+  - name: "sa\u011F kol"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 1179
+      width: 512
+      height: 1157
+    spriteID: 4f3ed03c147c50446972c2fd2ef8668b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 461, y: 1179}
+    spritePosition: {x: 1712, y: 1694}
+  - name: sol bacak
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1179
+      width: 449
+      height: 1438
+    spriteID: 3d7098663b7a7a549a7cf6e278016e9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1179}
+    spritePosition: {x: 1327, y: 284}
+  - name: "sa\u011F bacak"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2625
+      width: 392
+      height: 1435
+    spriteID: 37c890bdba747eb418ba9106ecdbce1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2625}
+    spritePosition: {x: 1726, y: 363}
+  - name: "sa\u011F el"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1685
+      y: 4
+      width: 352
+      height: 405
+    spriteID: 612628990dc966846a1133cb2d79a9ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1685, y: 4}
+    spritePosition: {x: 1984, y: 1451}
+  - name: "sa\u011F ayak"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 1128
+      width: 611
+      height: 251
+    spriteID: e7baf61c61521724bbb7263a21a81931
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1008, y: 1128}
+    spritePosition: {x: 1797, y: 180}
+  - name: sol ayak
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 866
+      width: 609
+      height: 254
+    spriteID: 350bd748e3764a044936969b72f91258
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1008, y: 866}
+    spritePosition: {x: 1313, y: 109}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Grup 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 616156ab2d18ab94c9e34ecb3cf3ae68
+    layerID: 17
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: kafa
+    spriteName: kafa
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 11470c944e78dd249a572ab6b8bb8387
+    layerID: 6
+    mosaicPosition: {x: 461, y: 3443}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "sa\xE7"
+    spriteName: "sa\xE7"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bfe4caa7fd8edb24085abc8f7f433a8d
+    layerID: 10
+    mosaicPosition: {x: 1008, y: 434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: sol kol
+    spriteName: sol kol
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f2143ded26aae824d8cfca6d10e8d74a
+    layerID: 4
+    mosaicPosition: {x: 461, y: 2344}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: sol el
+    spriteName: sol el
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3fc3dc50d38d7eb4eab4a0846410dc5d
+    layerID: 15
+    mosaicPosition: {x: 1582, y: 434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\xFCst g\xF6vde"
+    spriteName: "\xFCst g\xF6vde"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2c47729af3ab0ea4e9f4c88b0859df9e
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "g\xF6t"
+    spriteName: "g\xF6t"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2f93e6d0e106ecc47873c18faaf3ff56
+    layerID: 8
+    mosaicPosition: {x: 1008, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "sa\u011F kol"
+    spriteName: "sa\u011F kol"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4f3ed03c147c50446972c2fd2ef8668b
+    layerID: 5
+    mosaicPosition: {x: 461, y: 1179}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: sol bacak
+    spriteName: sol bacak
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3d7098663b7a7a549a7cf6e278016e9f
+    layerID: 7
+    mosaicPosition: {x: 4, y: 1179}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "sa\u011F bacak"
+    spriteName: "sa\u011F bacak"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 37c890bdba747eb418ba9106ecdbce1a
+    layerID: 9
+    mosaicPosition: {x: 4, y: 2625}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "sa\u011F el"
+    spriteName: "sa\u011F el"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 612628990dc966846a1133cb2d79a9ba
+    layerID: 16
+    mosaicPosition: {x: 1685, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "sa\u011F ayak"
+    spriteName: "sa\u011F ayak"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e7baf61c61521724bbb7263a21a81931
+    layerID: 12
+    mosaicPosition: {x: 1008, y: 1128}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: sol ayak
+    spriteName: sol ayak
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 350bd748e3764a044936969b72f91258
+    layerID: 11
+    mosaicPosition: {x: 1008, y: 866}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Arka Plan
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 875a70105da6c6b478e317426bcd6d3f
+    layerID: 1
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
