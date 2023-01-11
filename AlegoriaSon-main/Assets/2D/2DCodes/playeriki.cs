@@ -37,7 +37,7 @@ public class playeriki : MonoBehaviour
    
     void Update()
     {
-        Debug.Log(sayac);
+        
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move  *Time.deltaTime * speed);
         donme();

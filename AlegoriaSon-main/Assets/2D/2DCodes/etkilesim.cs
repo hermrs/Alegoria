@@ -14,7 +14,7 @@ public class etkilesim : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Toplanacak")
+        if (col.gameObject.tag == "incele")
         if (Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(col.gameObject);
@@ -39,7 +39,7 @@ public class etkilesim : MonoBehaviour
     }
     private void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.tag == "Toplanacak")
+        if (col.gameObject.tag == "incele")
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(col.gameObject);
