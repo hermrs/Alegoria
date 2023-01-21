@@ -90,7 +90,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: kafa
@@ -113,8 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 461, y: 3443}
-    spritePosition: {x: 1359, y: 2737}
+    uvTransform: {x: -898, y: 706}
   - name: "sa\xE7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -135,8 +133,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1008, y: 434}
-    spritePosition: {x: 1299, y: 2936}
+    uvTransform: {x: -291, y: -2502}
   - name: sol kol
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -157,8 +154,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 461, y: 2344}
-    spritePosition: {x: 1060, y: 1540}
+    uvTransform: {x: -599, y: 804}
   - name: sol el
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -179,8 +175,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1582, y: 434}
-    spritePosition: {x: 1242, y: 1313}
+    uvTransform: {x: 340, y: -879}
   - name: "\xFCst g\xF6vde"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -201,8 +196,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 1214, y: 1731}
+    uvTransform: {x: -1210, y: -1727}
   - name: "g\xF6t"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -223,8 +217,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1008, y: 4}
-    spritePosition: {x: 1359, y: 1545}
+    uvTransform: {x: -351, y: -1541}
   - name: "sa\u011F kol"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -245,8 +238,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 461, y: 1179}
-    spritePosition: {x: 1712, y: 1694}
+    uvTransform: {x: -1251, y: -515}
   - name: sol bacak
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -267,8 +259,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1179}
-    spritePosition: {x: 1327, y: 284}
+    uvTransform: {x: -1323, y: 895}
   - name: "sa\u011F bacak"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -289,8 +280,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 2625}
-    spritePosition: {x: 1726, y: 363}
+    uvTransform: {x: -1722, y: 2262}
   - name: "sa\u011F el"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -311,8 +301,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1685, y: 4}
-    spritePosition: {x: 1984, y: 1451}
+    uvTransform: {x: -299, y: -1447}
   - name: "sa\u011F ayak"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -333,8 +322,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1008, y: 1128}
-    spritePosition: {x: 1797, y: 180}
+    uvTransform: {x: -789, y: 948}
   - name: sol ayak
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -355,8 +343,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1008, y: 866}
-    spritePosition: {x: 1313, y: 109}
+    uvTransform: {x: -305, y: 757}
   characterData:
     bones: []
     parts: []
