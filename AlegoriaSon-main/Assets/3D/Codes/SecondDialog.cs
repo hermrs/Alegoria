@@ -35,8 +35,9 @@ public class SecondDialog : MonoBehaviour
     }
     public void OnMouseOver()
     {
-        if (Input.GetMouseButton(0))
+        if ((Input.GetMouseButton(0)) && dialogstartedd == false)
         {
+            dialogstartedd = true;
             StartCoroutine(firstcon());
         }
     }
