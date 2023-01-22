@@ -10,11 +10,15 @@ public class SecondDialog : MonoBehaviour
     public Text thirdd;
     public float seconddist;
     public Transform seconddialog;
+    public bool dialogstartedd = false;
     void Start()
     {
         firstd.enabled = false;
         secondd.enabled = false;
         thirdd.enabled = false;
+        
+
+       
 
     }
 
@@ -22,14 +26,19 @@ public class SecondDialog : MonoBehaviour
     void Update()
     {
         
-        seconddist = Vector3.Distance(transform.position, seconddialog.position);
-        if(seconddist < 5)
+        
+
+
+
+
+
+    }
+    public void OnMouseOver()
+    {
+        if (Input.GetMouseButton(0))
         {
-            
-            
             StartCoroutine(firstcon());
         }
-
     }
     IEnumerator firstcon()
     {

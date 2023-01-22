@@ -14,11 +14,14 @@ TagManager:
   - Buuble
   - "G\xF6rev"
   - "Bitmi\u015FG\xF6rev"
+  - 3DPlayer
+  - creature
+  - incele
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
