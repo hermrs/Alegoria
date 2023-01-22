@@ -16,15 +16,22 @@ public class playeriki : MonoBehaviour
     public GameObject ÝlkGörev;
     public GameObject Ýkinci;
     public GameObject Ucuncu;
-   
-    int sayac;
+    public int sayac;
+    public AudioSource au;
     
     void Start()
     {
         cc = GetComponent<CharacterController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        sayac = 0;
-       
+        au = GetComponent<AudioSource>(); 
+        sayac = 2;
+        görev31.text = "Bulaþýk";
+        au.enabled = false;
+    }
+   
+    private void Awake()
+    {
+        
     }
 
     public void GörevYapýldýmý(GameObject bbba)
@@ -37,13 +44,23 @@ public class playeriki : MonoBehaviour
    
     void Update()
     {
-        
+
+       
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move  *Time.deltaTime * speed);
         donme();
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)){
+            au.enabled = true;
+        }
+        else
+        {
+            au.enabled = false;
+        }
+        görev31.text = "Bulaþýk";
         if (sayac == 1)
         {
             görev31.text = "Bulaþýk";
+           
             
             
         }
