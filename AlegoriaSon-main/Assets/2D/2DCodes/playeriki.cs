@@ -16,15 +16,15 @@ public class playeriki : MonoBehaviour
     public GameObject ÝlkGörev;
     public GameObject Ýkinci;
     public GameObject Ucuncu;
-   
-    int sayac;
+    public int sayac;
     
     void Start()
     {
         cc = GetComponent<CharacterController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        sayac = 0;
-       
+        sayac = 2;
+        görev31.text = "Bulaþýk";
+
     }
 
     public void GörevYapýldýmý(GameObject bbba)
@@ -41,9 +41,12 @@ public class playeriki : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move  *Time.deltaTime * speed);
         donme();
+        
+        görev31.text = "Bulaþýk";
         if (sayac == 1)
         {
             görev31.text = "Bulaþýk";
+           
             
             
         }
