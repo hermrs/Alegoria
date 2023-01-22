@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using UnityEditor.TextCore.Text;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Collector escp;
     public CharacterController controller;
     public float speed = 12f;
     public float runspeed;
@@ -17,10 +20,11 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight;
     public bool alive;
     public GameObject dedscreen;
-    
+    public bool Escapable = false;
     
     void Start()
     {
+        escp=GetComponent<Collector>(); 
         alive = true;
         GetComponent<MouseLook>();
     }
@@ -55,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             StartCoroutine(ureded());
         }
+        if (escp.shard == 3)
+        {
+            Escapable = true;  
+        }
 
     }
     
@@ -84,4 +92,5 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         dedscreen.SetActive(true);
     }
+    
 }
