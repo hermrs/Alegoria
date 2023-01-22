@@ -24,7 +24,7 @@ public class etkilesim : MonoBehaviour
         {
             gizlianahtar.SetActive(true);
         }
-    
+       
 
         if (col.gameObject.tag == "Kapi")
         {

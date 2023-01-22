@@ -7,7 +7,7 @@ public class Examine : MonoBehaviour
 
     Camera mainCam;//Camera Object Will Be Placed In Front Of
     GameObject clickedObject;//Currently Clicked Object
-    
+    public GameObject kup;
 
     //Holds Original Postion And Rotation So The Object Can Be Replaced Correctly
     Vector3 originaPosition;
@@ -24,6 +24,14 @@ public class Examine : MonoBehaviour
 
     private void Update()
     {
+        if (examineMode == true)
+        {
+            kup = GameObject.Find("Cube");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Destroy(kup);
+            }
+        }
 
         ClickObject(clickedObject);//Decide What Object To Examine
 
@@ -37,7 +45,7 @@ public class Examine : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && examineMode == false)
         {
-            
+           
             RaycastHit hit;
             Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
 
@@ -55,10 +63,13 @@ public class Examine : MonoBehaviour
                     clickedObject.transform.position = mainCam.transform.position + (transform.forward * 3f);
 
                     //Pause The Game
-                    Time.timeScale = 0;
-
+                    Time.timeScale =0 ;
+                    
                     //Turn Examine Mode To True
-                    examineMode = true; }
+                    examineMode = true;
+                  
+                
+                }
             }
         }
     }
@@ -74,8 +85,10 @@ public class Examine : MonoBehaviour
 
             clickedObject.transform.Rotate(Vector3.up, -xAxis, Space.World);
             clickedObject.transform.Rotate(Vector3.right, yAxis, Space.World);
+          
         }
-    }
+    
+}
 
     void ExitExamineMode()
     {
@@ -87,7 +100,7 @@ public class Examine : MonoBehaviour
 
             //Unpause Game
             Time.timeScale = 1;
-
+           
             //Return To Normal State
             examineMode = false;
         }
