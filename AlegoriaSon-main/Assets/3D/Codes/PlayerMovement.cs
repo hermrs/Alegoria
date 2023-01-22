@@ -21,15 +21,18 @@ public class PlayerMovement : MonoBehaviour
     public bool alive;
     public GameObject dedscreen;
     public bool Escapable = false;
+    public GameObject kacabilirsin;
+    public GameObject footsteps;
     
     void Start()
     {
         escp=GetComponent<Collector>(); 
         alive = true;
         GetComponent<MouseLook>();
+        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -61,10 +64,23 @@ public class PlayerMovement : MonoBehaviour
         }
         if (escp.shard == 3)
         {
+            kacabilirsin.SetActive(true);
             Escapable = true;  
         }
-            
-    }
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+
+            footsteps.SetActive(true);
+        }
+        else
+        {
+            footsteps.SetActive(false);
+        }
+
+
+
+        }
+        
     
     public void run()
     {
