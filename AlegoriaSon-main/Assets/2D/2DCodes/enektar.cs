@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enektar : MonoBehaviour
 {
@@ -26,7 +27,27 @@ public class enektar : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-       
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (gameObject.name == "SalonKapi")
+            {
+                SceneManager.LoadScene(3);
+            }
+            if (gameObject.name == "MutfakKapi")
+            {
+                SceneManager.LoadScene(2);
+            }
+            if (gameObject.name == "KilerKapi")
+            {
+                SceneManager.LoadScene(4);
+            }
+            if (gameObject.name == "KoridorKapi")
+            {
+                SceneManager.LoadScene(1);
+            }
+        }
+
     }
+    
    
 }
