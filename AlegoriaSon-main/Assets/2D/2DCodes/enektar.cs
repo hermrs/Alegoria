@@ -53,6 +53,10 @@ public class enektar : MonoBehaviour
             {
                 SceneManager.LoadScene(8);
             }
+            if (gameObject.name == "yatak")
+            {
+                SceneManager.LoadScene(5);
+            }
         }
 
     }
