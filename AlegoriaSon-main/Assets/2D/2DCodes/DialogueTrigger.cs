@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public GameObject Gm;
     public GameObject Hm;
+=======
+    public GameObject gm;
+>>>>>>> Stashed changes
     public Dialogue dialogueScript;
     private bool playerDetected;
 
     //Detect trigger with player
+    private void Start()
+    {
+        gm = GameObject.Find("GörevController");
+    }
     private void OnTriggerEnter(Collider collision)
     {
         //If we triggerd the player enable playerdeteced and show indicator
@@ -37,9 +45,13 @@ public class DialogueTrigger : MonoBehaviour
         if (playerDetected && Input.GetKeyDown(KeyCode.E))
         {
             dialogueScript.StartDialogue();
+<<<<<<< Updated upstream
             Gm.gameObject.SetActive(true);  
             Hm.SetActive(true);
 
+=======
+            gm.SetActive(true);
+>>>>>>> Stashed changes
         }
     }
 }

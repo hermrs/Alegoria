@@ -17,7 +17,12 @@ public class Görev : MonoBehaviour
     public Transform hedef;
     public Transform player;
     public float menzil;
+<<<<<<< Updated upstream
     public GameObject Gm2;
+=======
+    public GameObject Işık;
+
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     public void GörevYapıldımı(GameObject bbba)
     {
@@ -29,12 +34,13 @@ public class Görev : MonoBehaviour
     {
         sayac = 1;
         basladımı = true;
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (sayac == 2) { hedef.position = ikinciObj.transform.position; }
         menzil = Vector3.Distance(player.position,hedef.position);
         if (menzil <= 2.5f && Input.GetKeyDown(KeyCode.E))
         {
@@ -44,11 +50,16 @@ public class Görev : MonoBehaviour
         {
             if (sayac == 1)
             {
+<<<<<<< Updated upstream
                 görevText.text = "Babanın Anahtarını Bul";
+=======
+                görevText.text = "Babana Anahtarı Bul ";
+>>>>>>> Stashed changes
 
             }
             if (sayac == 2)
             {
+<<<<<<< Updated upstream
                 görevText.text = "Işığı Aç";
                 GörevYapıldımı(ilkObj);
                 hedef.position = ikinciObj.transform.position;
@@ -63,6 +74,15 @@ public class Görev : MonoBehaviour
                 Gm2.gameObject.SetActive(true);
             }
             
+=======
+                görevText.text = "Sigortayı Aç";
+                GörevYapıldımı(ilkObj);
+               
+                Işık.SetActive(true);
+
+            }
+           
+>>>>>>> Stashed changes
         }
 
     }
