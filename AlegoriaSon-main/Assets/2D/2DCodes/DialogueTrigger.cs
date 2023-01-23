@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-<<<<<<< Updated upstream
+
     public GameObject Gm;
     public GameObject Hm;
-=======
+
     public GameObject gm;
->>>>>>> Stashed changes
+
     public Dialogue dialogueScript;
     private bool playerDetected;
 
@@ -45,13 +45,13 @@ public class DialogueTrigger : MonoBehaviour
         if (playerDetected && Input.GetKeyDown(KeyCode.E))
         {
             dialogueScript.StartDialogue();
-<<<<<<< Updated upstream
+
             Gm.gameObject.SetActive(true);  
             Hm.SetActive(true);
 
-=======
+
             gm.SetActive(true);
->>>>>>> Stashed changes
+
         }
     }
 }
