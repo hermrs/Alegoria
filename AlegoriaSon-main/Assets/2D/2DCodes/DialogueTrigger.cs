@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    public GameObject Gm;
+    public GameObject Hm;
     public Dialogue dialogueScript;
     private bool playerDetected;
 
@@ -35,6 +37,8 @@ public class DialogueTrigger : MonoBehaviour
         if (playerDetected && Input.GetKeyDown(KeyCode.E))
         {
             dialogueScript.StartDialogue();
+            Gm.gameObject.SetActive(true);  
+            Hm.SetActive(true);
 
         }
     }

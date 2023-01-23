@@ -17,7 +17,7 @@ public class Görev : MonoBehaviour
     public Transform hedef;
     public Transform player;
     public float menzil;
-
+    public GameObject Gm2;
     // Start is called before the first frame update
     public void GörevYapıldımı(GameObject bbba)
     {
@@ -44,27 +44,25 @@ public class Görev : MonoBehaviour
         {
             if (sayac == 1)
             {
-                görevText.text = "Sigorta Kutusunu Tamir Et";
+                görevText.text = "Babanın Anahtarını Bul";
 
             }
             if (sayac == 2)
             {
-                görevText.text = "Anahtarları Al";
+                görevText.text = "Işığı Aç";
                 GörevYapıldımı(ilkObj);
                 hedef.position = ikinciObj.transform.position;
+                
+
             }
             if (sayac == 3)
             {
-                görevText.text = "Koltukların Üstündeki Örtüleri Kaldır";
+                görevText.text = "Evi Dolaş ";
                 GörevYapıldımı(ikinciObj);
                 hedef.position = ucuncuObj.transform.position;
+                Gm2.gameObject.SetActive(true);
             }
-            if (sayac == 4)
-            {
-                görevText.text = "Işığı Aç, Güneş Batıyor";
-                GörevYapıldımı(ucuncuObj);
-                hedef.position = dorduncuObj.transform.position;
-            }
+            
         }
 
     }
