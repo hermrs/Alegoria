@@ -6,9 +6,10 @@ public class flashlight : MonoBehaviour
 {
     public bool flashlightwork = false;
     public GameObject fener;
+    
     void Start()
     {
-        
+       
     }
 
     

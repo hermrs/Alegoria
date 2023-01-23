@@ -17,6 +17,7 @@ TagManager:
   - 3DPlayer
   - creature
   - incele
+  - escapezone
   layers:
   - Default
   - TransparentFX
