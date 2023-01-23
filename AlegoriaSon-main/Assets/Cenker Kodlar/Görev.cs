@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Görev : MonoBehaviour
 {
     [Header("Görev Ayarları")]
-    private GameObject gorev;
     public Text görevText;
     public GameObject ilkObj;
     public GameObject ikinciObj;
@@ -68,14 +67,14 @@ public class Görev : MonoBehaviour
         }
 
     }
-    private void PressE()
+   /* private void PressE()
     {
         if (menzil <= 2.5f && Input.GetKeyDown(KeyCode.E))
         {
                 sayac++;
         }
 
-    }
+    }*/ 
 
 
 
