@@ -45,6 +45,14 @@ public class enektar : MonoBehaviour
             {
                 SceneManager.LoadScene(1);
             }
+            if(gameObject.name == "KoridorKapi2")
+            {
+                SceneManager.LoadScene(7);
+            }
+            if(gameObject.name == "KilerKapi2")
+            {
+                SceneManager.LoadScene(8);
+            }
         }
 
     }

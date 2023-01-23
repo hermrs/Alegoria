@@ -13,7 +13,11 @@ public class videogecis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("2DKoridor1", LoadSceneMode.Single);
+        }
+
     }
     IEnumerator geciszamanlayicisi()
     {

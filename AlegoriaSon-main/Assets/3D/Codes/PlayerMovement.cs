@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.TextCore.Text;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public Collector escp;
@@ -116,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(Escapable == true)
             {
-                Debug.Log("Kactin");
+                SceneManager.LoadScene("2D2YatakOdasý4", LoadSceneMode.Single);
             }
         }
 
