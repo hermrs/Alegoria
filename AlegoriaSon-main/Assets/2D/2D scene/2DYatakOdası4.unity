@@ -2072,7 +2072,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1579687469576308, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
       propertyPath: m_Name
-      value: jj_door_4_dark
+      value: KoridorKapi
       objectReference: {fileID: 0}
     - target: {fileID: 4236317170969072, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
       propertyPath: m_RootOrder
@@ -2128,3 +2128,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
+--- !u!1 &2105044532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1579687469576308, guid: db9fb8bf112e6b0458147765e27fc54a, type: 3}
+  m_PrefabInstance: {fileID: 2105044531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2105044533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105044532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1185135, y: 2.0849233, z: 0.80457467}
+  m_Center: {x: -2.4875657e-11, y: -0.0024617638, z: -0.33338776}
