@@ -1349,6 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kup: {fileID: 0}
+  sok: {fileID: 0}
 --- !u!1 &925486786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,20 +1856,32 @@ PrefabInstance:
       value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 3454934908636216055, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3454934908636216055, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Hi!
+      value: "O\u011Flum"
       objectReference: {fileID: 0}
     - target: {fileID: 3454934908636216055, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: Bitch
+      value: "San\u0131r\u0131m anahtarlar\u0131m\u0131 yatak odas\u0131nda unuttum"
       objectReference: {fileID: 0}
     - target: {fileID: 3454934908636216055, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: 'How Are You '
+      value: "yatak odas\u0131nda unuttum"
       objectReference: {fileID: 0}
     - target: {fileID: 3454934908636216055, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: Today ?
+      value: getirir misin ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047944596901691886, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047944596901691886, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5702525126626862276, guid: a5bf466987f14e64cb309802b9b3f31b, type: 3}
       propertyPath: m_IsActive
