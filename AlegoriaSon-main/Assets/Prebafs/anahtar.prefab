@@ -282,6 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5d5b536bf5cca4783fc2e26ab6fa73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hedef: {fileID: 0}
+  menzil: 0
 --- !u!114 &58471059823216284
 MonoBehaviour:
   m_ObjectHideFlags: 0
