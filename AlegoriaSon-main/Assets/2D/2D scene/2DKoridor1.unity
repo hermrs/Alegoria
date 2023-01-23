@@ -790,6 +790,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817077397}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &829514699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -855,6 +856,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 716e8e18d1592ac449c468a4fbbd95c6, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &864045872
 GameObject:
   m_ObjectHideFlags: 0
