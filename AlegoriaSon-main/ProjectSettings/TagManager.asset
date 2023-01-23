@@ -18,6 +18,7 @@ TagManager:
   - creature
   - incele
   - escapezone
+  - notlar
   layers:
   - Default
   - TransparentFX
