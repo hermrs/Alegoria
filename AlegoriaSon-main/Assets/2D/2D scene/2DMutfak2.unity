@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 287743835}
   - component: {fileID: 287743834}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: sok
   m_TagString: incele
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2089,7 +2089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
       propertyPath: m_Name
-      value: Cabinet1
+      value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698791611491746788, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
+      propertyPath: m_Name
+      value: Cube
       objectReference: {fileID: 0}
     - target: {fileID: 6698791611491746788, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
       propertyPath: m_TagString
@@ -2975,6 +2979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kup: {fileID: 404776776}
+  sok: {fileID: 287743832}
 --- !u!1 &1735628745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8426532563373981668, guid: bb1a1fd553d91224bb8d847a6e4666a0, type: 3}
@@ -3305,7 +3310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
       propertyPath: m_Name
-      value: Cabinet1
+      value: sok
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698791611491746788, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
+      propertyPath: m_Name
+      value: sok
       objectReference: {fileID: 0}
     - target: {fileID: 6698791611491746788, guid: a4fedeb4f03d9a244bfa3c9157637d34, type: 3}
       propertyPath: m_TagString

@@ -7,7 +7,8 @@ public class Examine : MonoBehaviour
 
     Camera mainCam;//Camera Object Will Be Placed In Front Of
     GameObject clickedObject;//Currently Clicked Object
-    public GameObject kup;
+  public   GameObject kup;
+    public GameObject sok;
 
     //Holds Original Postion And Rotation So The Object Can Be Replaced Correctly
     Vector3 originaPosition;
@@ -21,17 +22,35 @@ public class Examine : MonoBehaviour
         mainCam = Camera.main;
         examineMode = false;
     }
-
+    //private void incele(string go,GameObject gý )
+    //{
+    //    if (examineMode == true)
+    //    {
+    //        if (gameObject.name == go)
+    //        {
+    //          gý = GameObject.Find(go);
+    //            if (Input.GetKeyDown(KeyCode.E))
+    //            {
+    //                Destroy(gý);
+    //            }
+    //        }
+    //    }
+    //}
+   
     private void Update()
     {
         if (examineMode == true)
         {
-            kup = GameObject.Find("Cube");
-            if (Input.GetKeyDown(KeyCode.E))
+            if (gameObject.name == "Cube")
             {
-                Destroy(kup);
+               kup = GameObject.Find("Cube");
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Destroy(kup);
+                }
             }
         }
+
 
         ClickObject(clickedObject);//Decide What Object To Examine
 
@@ -63,7 +82,7 @@ public class Examine : MonoBehaviour
                     clickedObject.transform.position = mainCam.transform.position + (transform.forward * 3f);
 
                     //Pause The Game
-                    Time.timeScale =0 ;
+                    Time.timeScale =0;
                     
                     //Turn Examine Mode To True
                     examineMode = true;

@@ -24,7 +24,7 @@ public class enektar : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
         if (Input.GetKeyDown(KeyCode.E))
