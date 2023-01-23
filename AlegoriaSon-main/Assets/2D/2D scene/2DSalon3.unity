@@ -955,6 +955,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 23.039999, y: 9.99, z: 14.281591}
   m_Center: {x: 0, y: 0, z: 1.2009281}
+<<<<<<< Updated upstream:AlegoriaSon-main/Assets/2D/2D scene/2DSalon3.unity
 --- !u!114 &692069858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,6 +1064,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+=======
+--- !u!1 &718507547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7008229313930103713, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
+  m_PrefabInstance: {fileID: 743075253}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes:AlegoriaSon-main/Assets/Scenes 1/2DSalon3.unity
 --- !u!1001 &743075253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1070,6 +1078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7008229313930103704, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3674cd29348223b4cba220adda5f55f5, type: 2}
     - target: {fileID: 7008229313930103706, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
       propertyPath: gizlianahtar
       value: 
@@ -1134,6 +1146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7008229313930103714, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1637446258, guid: 715066bff7fb33e4fa3e352789a41259, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
 --- !u!1 &888010097
@@ -2087,6 +2103,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7008229313930103712, guid: 9355e9a51cfeec541a93ec0b46d5612d, type: 3}
   m_PrefabInstance: {fileID: 743075253}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1660604959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718507547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905e29f4370ccce49a90308dbe96fe6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729048695
 GameObject:
   m_ObjectHideFlags: 0
