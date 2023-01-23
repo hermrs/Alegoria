@@ -7,7 +7,6 @@ public class jumpscare : MonoBehaviour
 {
     
     public GameObject humscare;
-    public AudioSource jsaudio;
     void Start()
     {
         humscare.SetActive(false); 
@@ -28,7 +27,7 @@ public class jumpscare : MonoBehaviour
     IEnumerator JumpscareCR()
     {
         
-        
+
         yield return new WaitForSeconds(0.8f);
         humscare.SetActive(false);
         Destroy(gameObject);
