@@ -11,22 +11,16 @@ public class playeriki : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public CharacterController cc;
     public float speed = 5;
-    public GameObject gorev;
-    public Text görev31;
-    public GameObject ÝlkGörev;
-    public GameObject Ýkinci;
-    public GameObject Ucuncu;
-    public int sayac;
-    public AudioSource au;
+   
+    //public AudioSource au;
     
     void Start()
     {
         cc = GetComponent<CharacterController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        au = GetComponent<AudioSource>(); 
-        sayac = 2;
-        görev31.text = "Bulaþýk";
-        au.enabled = false;
+        //au = GetComponent<AudioSource>(); 
+      
+       // au.enabled = false;
     }
    
     private void Awake()
@@ -34,12 +28,7 @@ public class playeriki : MonoBehaviour
         
     }
 
-    public void GörevYapýldýmý(GameObject bbba)
-    {
-        
-            bbba.gameObject.SetActive(false);
-        
-    }
+    
     // Update is called once per frame
    
     void Update()
@@ -49,36 +38,14 @@ public class playeriki : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move  *Time.deltaTime * speed);
         donme();
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)){
-            au.enabled = true;
-        }
-        else
-        {
-            au.enabled = false;
-        }
-        görev31.text = "Bulaþýk";
-        if (sayac == 1)
-        {
-            görev31.text = "Bulaþýk";
-           
-            
-            
-        }
-        if (sayac == 2 )
-        {
-            görev31.text = "2.görev";
-            GörevYapýldýmý(ÝlkGörev);
-        }
-        if (sayac == 3 )
-        {
-            görev31.text = "3.görev";
-            GörevYapýldýmý(Ýkinci);
-        }
-        if (sayac == 4 )
-        {
-            görev31.text = "4.görev";
-            GörevYapýldýmý(Ucuncu);
-        }
+        //if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)){
+        //    au.enabled = true;
+        //}
+        //else
+        //{
+        //    au.enabled = false;
+        //}
+        
     }
     /*public void hareged(float MoveX, float MoveZ, GameObject oyuncu)
     {
@@ -91,19 +58,5 @@ public class playeriki : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) { spriteRenderer.flipX = true; }
         if (Input.GetKey(KeyCode.D)) { spriteRenderer.flipX = false; }
     }
-    public void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Görev")
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                gorev.SetActive(true);
-                sayac++;
-                
-                
-            }
-
-        }
-
-    }
+    
 }

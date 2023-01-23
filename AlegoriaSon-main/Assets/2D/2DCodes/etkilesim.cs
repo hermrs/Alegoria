@@ -9,55 +9,63 @@ public class etkilesim : MonoBehaviour
 
     public bool toplama = false;
     [SerializeField] private GameObject gizlianahtar;
-   
-   
 
-    private void OnTriggerEnter(Collider col)
+
+    
+     private void OnTriggerEnter(Collider col)
+      {
+          if (col.gameObject.tag == "incele")
+          if (Input.GetKeyDown(KeyCode.E))
+              {
+                  Destroy(col.gameObject);
+                  toplama = true;
+              }
+          if (toplama == true)
+          {
+              gizlianahtar.SetActive(true);
+          }
+
+
+          if (col.gameObject.tag == "Kapi")
+          {
+
+              if (toplama)
+              {
+
+                  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                  toplama = false;
+              }
+          }
+      }
+      private void OnTriggerStay(Collider col)
+      {
+          if (col.gameObject.tag == "incele")
+              if (Input.GetKeyDown(KeyCode.E))
+              {
+                  Destroy(col.gameObject);
+                  toplama = true;
+              }
+          if (toplama == true)
+          {
+              gizlianahtar.SetActive(true);
+          }
+
+          if (col.gameObject.tag == "Kapi")
+          {
+              if (Input.GetKeyDown(KeyCode.E) && toplama)
+              {
+
+                  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                  toplama = false;
+              }
+          }
+      }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+
     {
-        if (col.gameObject.tag == "incele")
-        if (Input.GetKeyDown(KeyCode.E))
-            {
-                Destroy(col.gameObject);
-                toplama = true;
-            }
-        if (toplama == true)
-        {
-            gizlianahtar.SetActive(true);
-        }
-       
+        Rigidbody body= hit.collider.attachedRigidbody;
+   
 
-        if (col.gameObject.tag == "Kapi")
-        {
-
-            if (Input.GetKeyDown(KeyCode.E) && toplama)
-            {
-
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                toplama = false;
-            }
-        }
     }
-    private void OnTriggerStay(Collider col)
-    {
-        if (col.gameObject.tag == "incele")
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Destroy(col.gameObject);
-                toplama = true;
-            }
-        if (toplama == true)
-        {
-            gizlianahtar.SetActive(true);
-        }
-
-        if (col.gameObject.tag == "Kapi")
-        {
-            if (Input.GetKeyDown(KeyCode.E) && toplama)
-            {
-
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                toplama = false;
-            }
-        }
-    }
+   
 }
