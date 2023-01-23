@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Escapable = true;  
         }
-            
+
     }
     
     public void run()

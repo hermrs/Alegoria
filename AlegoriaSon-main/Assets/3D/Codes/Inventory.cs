@@ -7,7 +7,6 @@ public class Inventory : MonoBehaviour
 {
     public Collector collector;
     public GameObject mumisik;
-    public bool clickability = true;
     void Start()
     {
         
@@ -20,17 +19,14 @@ public class Inventory : MonoBehaviour
     }
     public void OnMouseOver()
     {
-        if (clickability == true)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                clickability = false;
-                collector.shard++;
-                collector.shardcount.text = " Ruh Parçasý :  " + collector.shard.ToString();
-                Destroy(this.gameObject);
-                mumisik.SetActive(true);
-            }
+            collector.shard++;
+            collector.shardcount.text = " Soul Shard :  " + collector.shard.ToString();
+            Destroy(this.gameObject);
+            mumisik.SetActive(true);
         }
+
     }
 
 
