@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bb74ffe8f0fc7647bc3819bb2f2468a
+guid: baca42949dcfbcb46b4050eac4e4dba7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,84 +115,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: animasyondeneme.2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2006
-        height: 3472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c06028ce74f2beb45920f250b393b0f2
-      internalID: -168826183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animasyondeneme.2_1
-      rect:
-        serializedVersion: 2
-        x: 2006
-        y: 0
-        width: 2006
-        height: 3472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3570073577dfcc54da3037a8fed22fcc
-      internalID: -901906202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animasyondeneme.2_2
-      rect:
-        serializedVersion: 2
-        x: 4012
-        y: 0
-        width: 2006
-        height: 3472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31aa54877e7b42f458acee00410d647a
-      internalID: -577756347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4539c4fec17d0104fbee5bd81245636b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      animasyondeneme.2_2: -577756347
-      animasyondeneme.2_0: -168826183
-      animasyondeneme.2_1: -901906202
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

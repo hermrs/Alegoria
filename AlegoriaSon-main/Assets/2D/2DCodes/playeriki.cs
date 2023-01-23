@@ -11,6 +11,7 @@ public class playeriki : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public CharacterController cc;
     public float speed = 5;
+    private Animator anim;
    
     //public AudioSource au;
     
@@ -19,13 +20,12 @@ public class playeriki : MonoBehaviour
         cc = GetComponent<CharacterController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //au = GetComponent<AudioSource>(); 
-      
+        anim = GetComponent<Animator>();
        // au.enabled = false;
     }
    
     private void Awake()
     {
-        
     }
 
     
@@ -33,11 +33,19 @@ public class playeriki : MonoBehaviour
    
     void Update()
     {
-
        
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+            Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move  *Time.deltaTime * speed);
         donme();
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            anim.SetBool("walk", true);
+        }
+        else
+        {
+            anim.SetBool("walk", false);
+        }
         //if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)){
         //    au.enabled = true;
         //}
@@ -45,7 +53,7 @@ public class playeriki : MonoBehaviour
         //{
         //    au.enabled = false;
         //}
-        
+
     }
     /*public void hareged(float MoveX, float MoveZ, GameObject oyuncu)
     {
