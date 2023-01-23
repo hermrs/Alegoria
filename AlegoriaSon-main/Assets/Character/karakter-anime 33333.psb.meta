@@ -90,7 +90,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: "sa\xE7 boyama"
@@ -639,8 +638,7 @@ ScriptedImporter:
     - {x: 45, y: 46}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1017, y: 1031}
-    spritePosition: {x: 1478, y: 4278}
+    uvTransform: {x: -461, y: -3247}
   - name: "y\xFCz boyama"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1009,8 +1007,7 @@ ScriptedImporter:
     - {x: 28, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1597, y: 432}
-    spritePosition: {x: 1539, y: 4194}
+    uvTransform: {x: 58, y: -3762}
   - name: sol el
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1511,8 +1508,7 @@ ScriptedImporter:
     - {x: 40, y: 41}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 3276}
-    spritePosition: {x: 1267, y: 2246}
+    uvTransform: {x: -1263, y: 1030}
   - name: sol ayak
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1859,8 +1855,7 @@ ScriptedImporter:
     - {x: 26, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1510, y: 1274}
-    spritePosition: {x: 1337, y: 908}
+    uvTransform: {x: 173, y: 366}
   - name: "sa\u011F ayak"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2196,8 +2191,7 @@ ScriptedImporter:
     - {x: 25, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1510, y: 1031}
-    spritePosition: {x: 1885, y: 943}
+    uvTransform: {x: -375, y: 88}
   - name: 'sol kol '
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2564,8 +2558,7 @@ ScriptedImporter:
     - {x: 27, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 357, y: 2928}
-    spritePosition: {x: 1012, y: 2656}
+    uvTransform: {x: -655, y: 272}
   - name: "\xFCst g\xF6vde"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3971,8 +3964,7 @@ ScriptedImporter:
     - {x: 120, y: 121}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 1138, y: 3196}
+    uvTransform: {x: -1134, y: -3192}
   - name: "sa\u011F kol"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4556,8 +4548,7 @@ ScriptedImporter:
     - {x: 44, y: 45}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 633, y: 985}
-    spritePosition: {x: 1919, y: 2754}
+    uvTransform: {x: -1286, y: -1769}
   - name: boyun
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4913,8 +4904,7 @@ ScriptedImporter:
     - {x: 26, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 3752}
-    spritePosition: {x: 1672, y: 4065}
+    uvTransform: {x: -1668, y: -313}
   - name: sol bacak
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5323,8 +5313,7 @@ ScriptedImporter:
     - {x: 30, y: 31}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 357, y: 985}
-    spritePosition: {x: 1393, y: 1061}
+    uvTransform: {x: -1036, y: -76}
   - name: "sa\u011F bacak"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5728,8 +5717,7 @@ ScriptedImporter:
     - {x: 26, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 985}
-    spritePosition: {x: 1746, y: 1061}
+    uvTransform: {x: -1742, y: -76}
   - name: "sa\u011F el"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6239,8 +6227,7 @@ ScriptedImporter:
     - {x: 40, y: 41}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1017, y: 4}
-    spritePosition: {x: 1350, y: 2418}
+    uvTransform: {x: -333, y: -2414}
   - name: "g\xF6t"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6629,8 +6616,7 @@ ScriptedImporter:
     - {x: 29, y: 30}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1017, y: 432}
-    spritePosition: {x: 1442, y: 2753}
+    uvTransform: {x: -425, y: -2321}
   characterData:
     bones:
     - name: bone_1

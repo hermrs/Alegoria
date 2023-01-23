@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEditor.TextCore.Text;
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class PlayerMovement : MonoBehaviour
 {
     public Collector escp;
@@ -23,21 +24,23 @@ public class PlayerMovement : MonoBehaviour
     public bool Escapable = false;
     public GameObject kacabilirsin;
     public GameObject footsteps;
-    
+    public GameObject flsound;
+    public GameObject platformeyes;
     void Start()
     {
         escp=GetComponent<Collector>(); 
         alive = true;
         GetComponent<MouseLook>();
         
+
     }
 
-    
+
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
@@ -48,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump")&& isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
         run();
-        if(alive == false)
+        if (alive == false)
         {
             Cursor.lockState = CursorLockMode.None;
             StartCoroutine(ureded());
@@ -65,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         if (escp.shard == 3)
         {
             kacabilirsin.SetActive(true);
-            Escapable = true;  
+            Escapable = true;
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
@@ -76,37 +79,61 @@ public class PlayerMovement : MonoBehaviour
         {
             footsteps.SetActive(false);
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            flsound.SetActive(true);
+            StartCoroutine(lightcloser());
+        }
+        if(Escapable == true)
+        {
+            platformeyes.SetActive(true);
+        }
+
+}
+
+        public void run()
+        {
+            runspeed = 16f;
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = runspeed;
+            }
+            else
+            {
+                speed = normalspeed;
+            }
+
+        }
+        public void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "creature")
+            {
+
+                alive = false;
+            }
+     
+            if(other.gameObject.tag == "escapezone")
+        {
+            if(Escapable == true)
+            {
+                Debug.Log("Kactin");
+            }
+        }
+
 
 
 
         }
-        
+        IEnumerator ureded()
+        {
+            yield return new WaitForSeconds(0.6f);
+            dedscreen.SetActive(true);
+        }
+       IEnumerator lightcloser()
+    {
+        yield return new WaitForSeconds(0.3f);
+        flsound.SetActive(false);
+    }
     
-    public void run()
-    {
-        runspeed = 16f;
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = runspeed;
-        }
-        else
-        {
-            speed = normalspeed;
-        }
-
-    }
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "creature")
-        {
-            
-            alive = false;
-        }
-    }
-    IEnumerator ureded()
-    {
-        yield return new WaitForSeconds(0.6f);
-        dedscreen.SetActive(true);
-    }
     
 }
