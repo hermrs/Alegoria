@@ -13,6 +13,9 @@ public class Görev : MonoBehaviour
     public GameObject ucuncuObj;
     bool basladımı;
     public int sayac;
+    [Header("Uzaklığa Göre Çalışma")]
+    public Transform hedef;
+    public float menzil;
     // Start is called before the first frame update
     public void GörevYapıldımı(GameObject bbba)
     {
@@ -22,14 +25,14 @@ public class Görev : MonoBehaviour
     }
     void Start()
     {
-       sayac = 1;
+        sayac = 1;
         basladımı = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        menzil = Vector3.Distance( hedef.position, transform.position);
         if (basladımı)
         {
             if (sayac == 1)
@@ -46,7 +49,7 @@ public class Görev : MonoBehaviour
             {
                 görevText.text = "Koltukların Üstündeki Örtüleri Kaldır";
                 GörevYapıldımı(ikinciObj);
-                
+
             }
             if (sayac == 4)
             {
@@ -55,37 +58,21 @@ public class Görev : MonoBehaviour
             }
         }
     }
-     
     private void OnMouseOver()
     {
-       
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                
-                sayac++;
-
-
-            }
-
-        
-    }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        Rigidbody rb = hit.collider.attachedRigidbody;
-    }
-    public void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Görev")
+        if (menzil <= 2.5f)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-               
                 sayac++;
-
-
             }
-
         }
 
     }
+
+
+
 }
+
+     
+ 
