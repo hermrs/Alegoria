@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundTrigger : MonoBehaviour
 {
-    public GameObject ads;
+    public AudioSource ads;
     void Start()
     {
         
@@ -19,13 +19,7 @@ public class SoundTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "3DPlayer")
         {
-            ads.SetActive(true);
-            StartCoroutine(soundcloser());
+            ads.Play(0);
         }
-    }
-    IEnumerator soundcloser()
-    {
-        yield return new WaitForSeconds(3f);
-        Destroy(gameObject);
     }
 }

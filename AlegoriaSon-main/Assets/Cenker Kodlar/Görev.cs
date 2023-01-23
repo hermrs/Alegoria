@@ -29,6 +29,7 @@ public class Görev : MonoBehaviour
     {
         sayac = 1;
         basladımı = true;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
