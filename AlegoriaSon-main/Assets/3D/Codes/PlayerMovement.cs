@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(Escapable == true)
             {
+                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("2D2YatakOdasý4", LoadSceneMode.Single);
             }
         }
