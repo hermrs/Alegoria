@@ -11,6 +11,7 @@ public class SecondDialog : MonoBehaviour
     public float seconddist;
     public Transform seconddialog;
     public bool dialogstartedd = false;
+    public AudioSource aglak;
     void Start()
     {
         firstd.enabled = false;
@@ -35,8 +36,10 @@ public class SecondDialog : MonoBehaviour
     }
     public void OnMouseOver()
     {
-        if (Input.GetMouseButton(0))
+        if ((Input.GetMouseButton(0)) && dialogstartedd == false)
         {
+            aglak.Play(0);
+            dialogstartedd = true;
             StartCoroutine(firstcon());
         }
     }

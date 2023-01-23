@@ -10,6 +10,7 @@ public class EnemyFollow : MonoBehaviour
     Animator creatureanim;
     public Transform Target;
     public float mesafe;
+    public GameObject chasesound;
     void Start()
     {
         
@@ -27,13 +28,14 @@ public class EnemyFollow : MonoBehaviour
         
         if (mesafe <= 20)
         {
-            
+            chasesound.SetActive(true);
             agent.enabled = true;
             agent.destination = Target.position;
         }
         else
         {
             agent.enabled = false;
+            chasesound.SetActive(false);
            
         }
         if(mesafe < 3)
